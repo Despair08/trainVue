@@ -6,7 +6,9 @@
         <div><strong>Описание: </strong>{{ post.body }}</div>
       </div>
       <div class="post__btns">
-        <BaseButton>Удалить</BaseButton>
+        <BaseButton>
+            Удалить
+        </BaseButton>
       </div>
     </div>
   </div>

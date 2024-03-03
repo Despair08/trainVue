@@ -2,7 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 
 const requiredComponents = require.context(
-    '.',
+    '@/components/UI',
     false,
     /Base[A-Z]\w+\.(vue|js)$/
 );
