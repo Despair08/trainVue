@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name:'BaseButton',
+  name:'base-button',
 }
 </script>
 
@@ -17,9 +17,13 @@ export default {
   color: teal;
   border: 1px solid teal;
   cursor: pointer;
-}
-.button--form{
-  align-self: flex-end;
-  margin-top: 15px;
+    &:active{
+        background-color: teal;
+        color: aliceblue;
+    }
+    &--form{
+      align-self: flex-end;
+      margin-top: 15px;
+    }
 }
 </style>

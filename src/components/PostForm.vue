@@ -2,16 +2,14 @@
   <div>
     <form @submit.prevent>
       <h4>Создание поста</h4>
-      <input
+      <BaseInput
           v-model="post.title"
-          class="input"
           type="text"
-          placeholder="Название">
-      <input
+          placeholder="Название"/>
+      <BaseInput
           v-model="post.body"
-          class="input"
           type="text"
-          placeholder="Описание">
+          placeholder="Описание"/>
       <BaseButton
           class="button--form"
           @click="createPost"
@@ -23,6 +21,7 @@
 </template>
 
 <script>
+
 export default {
   data(){
     return{
@@ -34,6 +33,7 @@ export default {
   },
   methods:{
     createPost() {
+        console.log('!')
       this.post.id = Date.now();
       this.$emit('create',this.post)
       this.post = {
