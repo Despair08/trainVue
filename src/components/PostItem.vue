@@ -6,9 +6,11 @@
         <div><strong>Описание: </strong>{{ post.body }}</div>
       </div>
       <div class="post__btns">
-        <BaseButton>
+        <base-button
+          @click="$emit('remove',post)"
+        >
             Удалить
-        </BaseButton>
+        </base-button>
       </div>
     </div>
   </div>
